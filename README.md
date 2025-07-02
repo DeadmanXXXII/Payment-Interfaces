@@ -55,7 +55,7 @@ def do_request():
         response = requests.post(url, data=data).text
         print(response)
 
-threads = []
+threads = [50]
 
 for i in range(50):
     t = threading.Thread(target=do_request)
